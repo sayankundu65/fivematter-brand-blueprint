@@ -34,8 +34,15 @@ function staticExportPlugin() {
               fs.writeFileSync(path.join(publicDir, "index.html"), html, "utf-8");
               fs.writeFileSync(path.join(publicDir, "404.html"), html, "utf-8");
               fs.writeFileSync(path.join(publicDir, ".nojekyll"), "", "utf-8");
+
+              const distDir = path.resolve(__dirname, "dist");
+              if (!fs.existsSync(distDir)) {
+                fs.mkdirSync(distDir, { recursive: true });
+              }
+              fs.cpSync(publicDir, distDir, { recursive: true });
+
               console.log(
-                "\n[static-export] Generated static files for GitHub Pages in .output/public (index.html, 404.html, .nojekyll)",
+                "\n[static-export] Generated static files in .output/public and dist (index.html, 404.html, .nojekyll)",
               );
             }
           }

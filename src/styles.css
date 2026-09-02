@@ -725,7 +725,65 @@ h3,
   display: grid;
   grid-template-columns: minmax(0, 1.8fr) minmax(240px, 0.7fr);
   gap: 6vw;
-  align-items: end;
+  align-items: center;
+}
+.letterhead-image-wrap {
+  width: 100%;
+  max-width: 760px;
+}
+.letterhead-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.letterhead-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.25);
+}
+.card-stage {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+.card-design-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.card-design-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.22);
+}
+.email-stage {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.email-signature-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.email-signature-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.22);
 }
 .letterhead-sheet {
   aspect-ratio: 210/297;

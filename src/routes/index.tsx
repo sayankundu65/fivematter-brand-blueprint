@@ -1,5 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import wordmark from "@/assets/fivematter-wordmark.png";
+import letterheadImg from "@/assets/letterhead.png";
+import cardDesignImg from "@/assets/card-design.png";
+import emailSignatureImg from "@/assets/email-signature.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -455,42 +458,12 @@ function BrandSystem() {
             </p>
           </div>
           <div className="letterhead-stage">
-            <div className="letterhead-sheet">
-              <div className="letterhead-top">
-                <Wordmark dark />
-                <span>FIVEMATTER / CORRESPONDENCE</span>
-              </div>
-              <div className="letterhead-rule" />
-              <div className="letterhead-body">
-                <span>02 September 2026</span>
-                <p>
-                  Recipient Name
-                  <br />
-                  Company Name
-                  <br />
-                  Address line
-                </p>
-                <h4>Transformation that holds.</h4>
-                <p>Dear Recipient,</p>
-                <p>
-                  FiveMatter connects people, process, data, technology and governance as one
-                  operating system—so change creates capability, not dependency.
-                </p>
-                <p>
-                  Yours sincerely,
-                  <br />
-                  <b>Kamaldeep Dhanjal</b>
-                  <br />
-                  CEO / Managing Director
-                </p>
-              </div>
-              <div className="letterhead-footer">
-                <FiveMarks compact />
-                <p>
-                  160 Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914
-                </p>
-                <p>fivematter.com&nbsp;&nbsp; / &nbsp;&nbsp;+65 310 725 65</p>
-              </div>
+            <div className="letterhead-image-wrap">
+              <img
+                src={letterheadImg}
+                alt="FiveMatter Letterhead design"
+                className="letterhead-image"
+              />
             </div>
             <div className="spec-list">
               <div>
@@ -526,39 +499,11 @@ function BrandSystem() {
             </p>
           </div>
           <div className="card-stage">
-            <div className="contact-card contact-card--black">
-              <Wordmark />
-              <div className="card-tagline">Focus. Solve. Scale.</div>
-              <span className="card-note">Tagline order / swappable mockup detail</span>
-              <FiveMarks compact />
-            </div>
-            <div className="contact-card contact-card--paper">
-              <div className="card-person">
-                <h4>
-                  Kamaldeep
-                  <br />
-                  Dhanjal
-                </h4>
-                <span>CEO / Managing Director</span>
-              </div>
-              <div className="card-details">
-                <p>+65 310 725 65</p>
-                <p>kamaldeep@fivematter.com</p>
-                <p>fivematter.com/</p>
-                <p>
-                  160 Robinson Road, #14-04
-                  <br />
-                  Singapore Business Federation Center
-                  <br />
-                  Singapore 068914
-                </p>
-              </div>
-              <div className="partner-badge">
-                <b>Partner</b>
-                <span>System integrator</span>
-              </div>
-              <FiveMarks compact />
-            </div>
+            <img
+              src={cardDesignImg}
+              alt="FiveMatter Business Card design"
+              className="card-design-image"
+            />
           </div>
         </article>
 
@@ -571,55 +516,12 @@ function BrandSystem() {
               information.
             </p>
           </div>
-          <div className="email-client">
-            <div className="email-chrome">
-              <span>New message</span>
-              <div>
-                <i />
-                <i />
-                <i />
-              </div>
-            </div>
-            <div className="email-fields">
-              <p>
-                <span>To</span>Client partner
-              </p>
-              <p>
-                <span>Subject</span>Transformation readiness review
-              </p>
-            </div>
-            <div className="email-message">
-              <p>Hi Alex,</p>
-              <p>
-                Please find the readiness summary attached. I’m happy to walk through the five
-                dimensions with your team.
-              </p>
-              <p>Best regards,</p>
-            </div>
-            <div className="email-signature">
-              <div className="signature-brand">
-                <Wordmark dark />
-                <FiveMarks compact />
-              </div>
-              <div className="signature-person">
-                <h4>Kamaldeep Dhanjal</h4>
-                <b>CEO / Managing Director</b>
-                <p>
-                  +65 310 725 65
-                  <br />
-                  <a href="mailto:kamaldeep@fivematter.com">kamaldeep@fivematter.com</a>
-                  <br />
-                  <a href="https://fivematter.com">fivematter.com</a>
-                </p>
-              </div>
-              <p className="signature-address">
-                160 Robinson Road, #14-04
-                <br />
-                Singapore Business Federation Center
-                <br />
-                Singapore 068914
-              </p>
-            </div>
+          <div className="email-stage">
+            <img
+              src={emailSignatureImg}
+              alt="FiveMatter Email Signature design"
+              className="email-signature-image"
+            />
           </div>
         </article>
 

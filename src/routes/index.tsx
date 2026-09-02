@@ -499,11 +499,27 @@ function BrandSystem() {
             </p>
           </div>
           <div className="card-stage">
-            <img
-              src={cardDesignImg}
-              alt="FiveMatter Business Card design"
-              className="card-design-image"
-            />
+            <div className="card-design-showcase">
+              <img
+                src={cardDesignImg}
+                alt="FiveMatter Business Card design - Black and White grounds"
+                className="card-design-image"
+              />
+            </div>
+            <div className="card-specs-bar">
+              <div>
+                <b>01 / Front</b>
+                <span>Matte Black &bull; Cobalt UV gloss Five Marks</span>
+              </div>
+              <div>
+                <b>02 / Reverse</b>
+                <span>Natural Paper &bull; Direct contact &amp; partner matrix</span>
+              </div>
+              <div>
+                <b>Dimensions</b>
+                <span>85 &times; 55 mm standard corporate</span>
+              </div>
+            </div>
           </div>
         </article>
 
@@ -516,12 +532,38 @@ function BrandSystem() {
               information.
             </p>
           </div>
-          <div className="email-stage">
-            <img
-              src={emailSignatureImg}
-              alt="FiveMatter Email Signature design"
-              className="email-signature-image"
-            />
+          <div className="email-client">
+            <div className="email-chrome">
+              <span>New message</span>
+              <div>
+                <i />
+                <i />
+                <i />
+              </div>
+            </div>
+            <div className="email-fields">
+              <p>
+                <span>To</span>Client partner
+              </p>
+              <p>
+                <span>Subject</span>Transformation readiness review
+              </p>
+            </div>
+            <div className="email-message">
+              <p>Hi Alex,</p>
+              <p>
+                Please find the readiness summary attached. I’m happy to walk through the five
+                dimensions with your team.
+              </p>
+              <p>Best regards,</p>
+            </div>
+            <div className="email-signature-frame">
+              <img
+                src={emailSignatureImg}
+                alt="FiveMatter Email Signature design"
+                className="email-signature-image"
+              />
+            </div>
           </div>
         </article>
 

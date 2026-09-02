@@ -723,67 +723,93 @@ h3,
 }
 .letterhead-stage {
   display: grid;
-  grid-template-columns: minmax(0, 1.8fr) minmax(240px, 0.7fr);
-  gap: 6vw;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 5vw;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .letterhead-image-wrap {
   width: 100%;
-  max-width: 760px;
+  max-width: 460px;
+  margin: 0 auto;
 }
 .letterhead-image {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 4px;
-  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.25);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 .letterhead-image:hover {
   transform: translateY(-3px);
-  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 28px 55px -10px rgba(0, 0, 0, 0.3);
 }
 .card-stage {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1120px;
   margin: auto;
+}
+.card-design-showcase {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.card-design-showcase:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 28px 55px -10px rgba(0, 0, 0, 0.22);
 }
 .card-design-image {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
-  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.15);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
 }
-.card-design-image:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.22);
+.card-specs-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid color-mix(in srgb, var(--brand-black) 15%, transparent);
 }
-.email-stage {
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
+.card-specs-bar > div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.card-specs-bar b {
+  font: 500 13px "Space Grotesk";
+  color: var(--brand-black);
+}
+.card-specs-bar span {
+  font-size: 13px;
+  line-height: 1.4;
+  color: color-mix(in srgb, var(--brand-black) 70%, transparent);
+}
+.email-signature-frame {
+  padding: 0 28px 28px;
 }
 .email-signature-image {
   width: 100%;
+  max-width: 720px;
   height: auto;
   display: block;
   border-radius: 8px;
-  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.12);
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 .email-signature-image:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 24px 50px -10px rgba(0, 0, 0, 0.22);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.18);
 }
 .letterhead-sheet {
   aspect-ratio: 210/297;
@@ -869,14 +895,7 @@ h3,
   font-size: 12px;
   line-height: 1.5;
 }
-.card-stage {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 3.5vw;
-  align-items: center;
-  max-width: 1380px;
-  margin: auto;
-}
+
 .contact-card {
   min-width: 0;
   aspect-ratio: 1.75;
